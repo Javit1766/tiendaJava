@@ -8,7 +8,6 @@ public class PanelBuscar extends JPanel {
 
     public PanelBuscar() {
         setLayout(new BorderLayout());
-        setBorder(BorderFactory.createLineBorder(Color.RED)); // borde rojo para ver limites
 
         JLabel lblBuscar = new JLabel("Buscar");
         lblBuscar.setForeground(Color.RED);
