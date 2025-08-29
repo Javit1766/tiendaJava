@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class PanelProductos extends JPanel {
 
-    public PanelProductos() {
+    public PanelProductos( String listaProductos) {
         setLayout(new BorderLayout());
 
         JLabel lblProducto = new JLabel("Producto");

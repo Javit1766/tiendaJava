@@ -7,7 +7,7 @@ import paneles.PanelProductos;
 
 public class Dashboard extends JFrame {
 
-    public Dashboard() {
+    public Dashboard(String listaProductos ) {
         setTitle("Tienda Fake");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 500);
@@ -21,7 +21,7 @@ public class Dashboard extends JFrame {
         panelBuscar.setPreferredSize(new Dimension(300, getHeight()));
 
         // Panel de productos (derecha)
-        PanelProductos panelProductos = new PanelProductos();
+        PanelProductos panelProductos = new PanelProductos( listaProductos);
 
         add(panelBuscar, BorderLayout.WEST);
         add(panelProductos, BorderLayout.CENTER);
